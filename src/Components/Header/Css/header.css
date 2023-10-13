@@ -1,0 +1,22 @@
+.partnersStyle {
+  background: linear-gradient(91deg, #0076ce 26.63%, #9400d3 65.81%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+}
+.sectionTitle {
+  font-family: Poppins;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+}
+.searchButton {
+  right: 102px;
+  width: 186p;
+}

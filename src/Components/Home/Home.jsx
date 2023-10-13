@@ -1,7 +1,11 @@
+import Header from "../Header/Header";
+import JoinUs from "../JoinUs/JoinUs";
+
 const Home = () => {
   return (
     <div>
-      <h1>This is home</h1>
+      <Header></Header>
+      <JoinUs></JoinUs>
     </div>
   );
 };
