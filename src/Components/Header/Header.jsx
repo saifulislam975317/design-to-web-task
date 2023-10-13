@@ -8,7 +8,7 @@ const Header = () => {
       <div>
         <h1 className="text-[65px] sectionTitle">
           Find
-          <span className="mx-2 partnersStyle">Partners</span>
+          <span className="mx-2 styleColor">Partners</span>
           (CAs) <br /> available online
         </h1>
         <p>
