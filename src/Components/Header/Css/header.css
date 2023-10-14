@@ -27,3 +27,9 @@
   font-weight: 700;
   color: black;
 }
+.footerBg {
+  background: var(
+    --gradient-footer,
+    linear-gradient(96deg, #0076ce -7.82%, #9400d3 143.96%)
+  );
+}
