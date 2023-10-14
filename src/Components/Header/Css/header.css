@@ -18,6 +18,15 @@
   line-height: 80px;
 }
 
+.userTitle {
+  color: black;
+
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .fontStyle {
   font-size: 16px;
   font-style: normal;
