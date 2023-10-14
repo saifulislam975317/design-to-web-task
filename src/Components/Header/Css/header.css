@@ -21,3 +21,9 @@
   right: 102px;
   width: 186p;
 }
+.fontStyle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  color: black;
+}
