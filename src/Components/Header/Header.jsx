@@ -33,7 +33,7 @@ const Header = () => {
   };
 
   return (
-    <div className="md:flex gap-5 justify-center my-24 items-center">
+    <div className="md:flex gap-5 justify-center my-24  items-center">
       <div>
         <h1 className="text-[65px] sectionTitle">
           Find
@@ -60,7 +60,9 @@ const Header = () => {
             </div>
 
             <div className="indicator">
-              <button className="btn join-item">Search</button>
+              <button className="btn bg-[#0076CE] text-white join-item">
+                Search
+              </button>
             </div>
           </div>
         </div>
@@ -68,9 +70,17 @@ const Header = () => {
         <DisplayInfo info={info}></DisplayInfo>
       </div>
       <div className="flex gap-4">
-        <img className="w-[198px] h-[403px] mt-[83px]" src={image2} alt="" />
-        <img className="w-[198px] h-[403px]" src={image3} alt="" />
-        <img className="w-[198px] h-[403px] my-[42px]" src={image1} alt="" />
+        <img
+          className="w-[198px] h-[403px] mt-[83px] rounded-3xl"
+          src={image2}
+          alt=""
+        />
+        <img className="w-[198px] h-[403px] rounded-3xl" src={image3} alt="" />
+        <img
+          className="w-[198px] h-[403px] my-[42px] rounded-3xl"
+          src={image1}
+          alt=""
+        />
       </div>
     </div>
   );

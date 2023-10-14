@@ -39,14 +39,14 @@ const SocialPlatform = () => {
             <div className="flex">
               <img className="w-[50px] h-[50px] mr-4" src={connect} alt="" />
               <h1>
-                <span className="fontStyle">CONNECT</span> with the <br />{" "}
+                <span className="fontStyle">CONNECT</span> with the <br />
                 resources to meet <br /> your business needs
               </h1>
             </div>
             <div className="flex">
               <img className="w-[50px] h-[50px] mr-4" src={academy} alt="" />
               <h1>
-                <span className="fontStyle"> ACADEMY</span> to give you <br />{" "}
+                <span className="fontStyle"> ACADEMY</span> to give you <br />
                 the skills for success <br /> in your career
               </h1>
             </div>
@@ -76,7 +76,9 @@ const SocialPlatform = () => {
             <img className="w-[280px] h-[300px]" src={boy} alt="" />
           </div>
         </div>
-        <img className="w-[280px] h-[300px]" src={girl} alt="" />
+        <div className="">
+          <img className="w-[280px] h-[300px] bg-[#DDF3FF]" src={girl} alt="" />
+        </div>
       </div>
     </div>
   );

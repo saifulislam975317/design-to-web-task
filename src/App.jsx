@@ -3,7 +3,7 @@ import router from "./Routes/Routes";
 
 function App() {
   return (
-    <div className="w-[1440px] mx-auto">
+    <div id="backgroundColor" className="w-[1440px] mx-auto ">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

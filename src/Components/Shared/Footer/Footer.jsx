@@ -4,7 +4,7 @@ import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-[137px]">
       <div className=" text-white footerBg ">
         <footer className="footer p-10 ">
           <aside>
