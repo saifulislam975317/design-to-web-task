@@ -17,10 +17,7 @@
   font-weight: 700;
   line-height: 80px;
 }
-.searchButton {
-  right: 102px;
-  width: 186p;
-}
+
 .fontStyle {
   font-size: 16px;
   font-style: normal;
@@ -43,7 +40,7 @@
   display: block;
   bottom: 150%;
   left: 3%;
-  width: 97%;
+  width: 88%;
   height: 1px;
   background: #ffffff;
 }
