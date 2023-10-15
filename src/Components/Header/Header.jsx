@@ -13,23 +13,29 @@ const Header = () => {
       .then((res) => res.json())
       .then((data) => {
         const results = data.filter((user) => {
-          if (!user || !user.name || !user.name.toLowerCase()) {
-            setError("Result not found");
-          } else {
-            return (
-              value &&
-              user &&
-              user.name &&
-              user.name.toLowerCase().includes(value)
-            );
-          }
+          return (
+            value &&
+            user &&
+            user.name &&
+            user.name.toLowerCase().includes(value)
+          );
         });
         setInfo(results);
+        if (results.length === 0) {
+          setError("Do not found any matching data.");
+        } else {
+          setError("");
+        }
       });
   };
   const handleSearch = (value) => {
     setInput(value);
-    fetchData(value);
+    if (value.trim() === "") {
+      setError("");
+      setInfo([]);
+    } else {
+      fetchData(value);
+    }
   };
 
   return (
@@ -65,8 +71,9 @@ const Header = () => {
               </button>
             </div>
           </div>
+          <p className="text-red-500 mt-2 font-bold">{error}</p>
         </div>
-        <p className="text-red-500">{error}</p>
+
         <DisplayInfo info={info}></DisplayInfo>
       </div>
       <div className="lg:flex mt-[126px] gap-4">
