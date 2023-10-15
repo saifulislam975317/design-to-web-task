@@ -33,16 +33,16 @@ const Header = () => {
   };
 
   return (
-    <div className="md:flex gap-5 justify-center my-24  items-center">
+    <div className="md:flex px-12 gap-5 justify-center items-center">
       <div>
-        <h1 className="text-[65px] sectionTitle">
+        <h1 className="md:text-[65px] text-4xl font-bold mb-2 ">
           Find
           <span className="mx-2 styleColor">Partners</span>
           (CAs) <br /> available online
         </h1>
-        <p>
-          <span className="font-bold text-gray-500">CONNECT</span> with us where
-          your services are listed and visible to a myriad
+        <p className="text-[13px] md:text-[16px] lg:mt-8">
+          <span className="font-bold text-gray-500 ">CONNECT</span> with us
+          where your services are listed and visible to a myriad
           <br />
           of businesses seeking CA’s for compliance support
         </p>
@@ -53,7 +53,7 @@ const Header = () => {
                 <input
                   value={input}
                   onChange={(e) => handleSearch(e.target.value)}
-                  className="input input-bordered join-item w-[400px]"
+                  className="input input-bordered join-item lg:w-[400px] w-[300px]"
                   placeholder="Search by name"
                 />
               </div>
@@ -69,18 +69,28 @@ const Header = () => {
         <p className="text-red-500">{error}</p>
         <DisplayInfo info={info}></DisplayInfo>
       </div>
-      <div className="flex gap-4">
-        <img
-          className="w-[198px] h-[403px] mt-[83px] rounded-3xl"
-          src={image2}
-          alt=""
-        />
-        <img className="w-[198px] h-[403px] rounded-3xl" src={image3} alt="" />
-        <img
-          className="w-[198px] h-[403px] my-[42px] rounded-3xl"
-          src={image1}
-          alt=""
-        />
+      <div className="lg:flex mt-[126px] gap-4">
+        <div>
+          <img
+            className="w-[198px] h-[403px] mt-[5px] rounded-3xl"
+            src={image2}
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="w-[198px] h-[403px] rounded-3xl"
+            src={image3}
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="w-[198px] h-[403px] my-[42px] rounded-3xl"
+            src={image1}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

@@ -18,17 +18,17 @@ const CADetails = () => {
   }, [info, showAll]);
   return (
     <div>
-      <div className="flex justify-center px-20 mt-[80px] gap-4">
+      <div className="lg:flex justify-center px-8 mt-[80px] gap-4">
         <div className="w-[1/2]">
           <h1 className="userTitle">{user.name}</h1>
-          <p>{user.intro}</p>
+          <p className="text-[12px] lg:text-[16px]">{user.intro}</p>
           <h3 className="text-blue-500 my-4 ">
             <AiFillStar className="text-xl mr-2 inline-block" />
             <span className="font-bold">{user.rating}</span>
             <span className="text-black ml-2">({user.reviewCount})</span>
           </h3>
 
-          <div className="card w-[515px] bg-base-100 shadow-xl">
+          <div className="card w-[430px] lg:w-[515px] bg-base-100 shadow-xl">
             <div className="card-body">
               <div className="flex justify-between items-center">
                 <div>
@@ -43,7 +43,7 @@ const CADetails = () => {
                 {user.deliveryTime}
               </p>
               <div className="flex">
-                <button className="rounded-xl font-bold bg-[#0076CE] text-white text-[16px] w-[220px] mr-6">
+                <button className="rounded-xl font-bold bg-[#0076CE] text-white lg:text-[16px] text-[12px] w-[220px] mr-6">
                   Request Proposal
                 </button>
                 <button className="btn font-bold w-[220px] btn-outline bg-white">
@@ -52,7 +52,7 @@ const CADetails = () => {
               </div>
             </div>
           </div>
-          <div className="card w-[515px] mt-8 bg-base-100 shadow-xl">
+          <div className="card  w-[430px] lg:w-[515px] my-8 bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="userTitle">What people say?</h2>
               <p>{user.testimonial.text}</p>
@@ -61,12 +61,12 @@ const CADetails = () => {
         </div>
         <div className="w-[1/2]">
           <img
-            className="w-[733px] h-[412px] rounded-2xl"
+            className="lg:w-[733px] w-[430px] h-[412px] rounded-2xl"
             src={user.image}
             alt="Image Not found"
           />
           <h1 className="userTitle my-8">About {user.name}</h1>
-          <div className="flex justify-between">
+          <div className="lg:flex justify-between">
             <div>
               <h1 className="text-[#999] text-[16px] font-bold mb-2">FROM</h1>
               <h2>{user.about.from}</h2>
@@ -85,9 +85,9 @@ const CADetails = () => {
             </div>
           </div>
           <h3 className="text-[#999] text-[16px] mt-8 font-bold">About</h3>
-          <p className="text-[15px]">{user.about.description}</p>
+          <p className="lg:text-[15px] text-[12px]">{user.about.description}</p>
 
-          <div className="flex justify-between mt-8">
+          <div className="lg:flex  justify-between mt-8">
             <div className="">
               <h1 className="text-[#999] text-[16px] mb-2 font-bold">
                 SERVICES I OFFER
@@ -98,8 +98,8 @@ const CADetails = () => {
                 </li>
               ))}
             </div>
-            <div>
-              <h1 className="text-[#999] text-[16px] font-bold mr-20">
+            <div className="my-4">
+              <h1 className="text-[#999] text-[16px] font-bold mr-20 my-2">
                 WHY ME?
               </h1>
               <li>One-time delivery</li>
@@ -112,12 +112,17 @@ const CADetails = () => {
       <Link className="btn btn-success ml-10" to="/">
         Back To Home
       </Link>
-      <h1 className="userTitle mt-8 ml-10">Recommended for you</h1>
-      <div className="grid md:grid-cols-3 justify-items-center mt-8 gap-4">
+      <h1 className="userTitle mt-8 ml-10 lg:ml-[127px]">
+        Recommended for you
+      </h1>
+      <div className="lg:grid md:grid-cols-3 lg:mx-[128px] mx-12 justify-items-center mt-8 gap-4">
         {displayData.map((accounted) => (
-          <div key={accounted.id} className="card w-96 bg-base-100 shadow-xl">
+          <div
+            key={accounted.id}
+            className="card w-96 bg-base-100 shadow-xl mb-4"
+          >
             <figure>
-              <img src={accounted.image} alt="Shoes" />
+              <img src={accounted.image} alt="Accountants" />
             </figure>
             <div className="card-body">
               <div className="flex justify-between items-center">
@@ -145,7 +150,7 @@ const CADetails = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center my-5">
+      <div className="lg:flex ml-48 lg:ml-0 justify-center my-5">
         <button
           className="btn btn-warning"
           onClick={() => setShowAll(!showAll)}

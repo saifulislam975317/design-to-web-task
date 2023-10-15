@@ -45,12 +45,12 @@ const Footer = () => {
             <a className="link link-hover">Accessibility</a>
           </nav>
         </footer>
-        <div className="footerText flex justify-between">
-          <p className="text-[14px] px-[38px] pb-4 ">
+        <div className="footerText lg:flex justify-between">
+          <p className="lg:text-[14px] text-[12px] px-[38px] pb-4 lg:mt-0 mt-8">
             Sambhaji Nagar, No2, St. Antony Road, Chembur, Mumbai - 400071,
             Maharashtra
           </p>
-          <div className="flex gap-6 mr-32">
+          <div className="flex px-12 pb-4 gap-6 mr-32">
             <CiFacebook className="text-2xl" />
             <AiOutlineInstagram className="text-2xl" />
             <FaLinkedinIn className="text-2xl" />
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="flex justify-center items-center text-[12px] bg-black text-white h-[57px]">
+      <p className="lg:flex justify-center items-center lg:text-[16px] text-[10px] lg:pt-0 pt-6  px-8 bg-black text-white h-[57px]">
         Registered trademark of India Private Limited © 2023 loerumipsum Inc.
         All Rights Reserved
       </p>

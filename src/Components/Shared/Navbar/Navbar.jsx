@@ -83,7 +83,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <img className="w-[50px] h-[50px]" src={logo} alt="" />
+        <img
+          className="w-[50px] hidden lg:block h-[50px] ml-[127px]"
+          src={logo}
+          alt=""
+        />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -145,8 +149,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end flex gap-4">
-        <button className="btn btn-outline btn-accent">Login</button>
-        <button className="btn btn-active btn-accent">Register</button>
+        <button className="btn w-[100px] btn-outline text-[#0076CE] font-bold">
+          Login
+        </button>
+        <button className=" py-3 mr-[127px] rounded-lg w-[100px] text-white font-bold bg-[#0076CE]">
+          Register
+        </button>
       </div>
     </div>
   );
