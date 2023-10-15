@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <div className="md:flex px-12 gap-5 justify-center items-center">
       <div>
-        <h1 className="md:text-[65px] text-4xl font-bold mb-2 ">
+        <h1 className="md:text-[65px] text-4xl font-bold mb-2 leading-tight">
           Find
           <span className="mx-2 styleColor">Partners</span>
           (CAs) <br /> available online
