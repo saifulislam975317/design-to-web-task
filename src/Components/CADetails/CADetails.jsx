@@ -22,9 +22,9 @@ const CADetails = () => {
         <div className="w-[1/2]">
           <h1 className="userTitle">{user.name}</h1>
           <p>{user.intro}</p>
-          <h3 className="text-blue-500">
+          <h3 className="text-blue-500 my-4 ">
             <AiFillStar className="text-xl mr-2 inline-block" />
-            {user.rating}
+            <span className="font-bold">{user.rating}</span>
             <span className="text-black ml-2">({user.reviewCount})</span>
           </h3>
 
@@ -109,11 +109,11 @@ const CADetails = () => {
           </div>
         </div>
       </div>
-      <Link className="btn btn-success" to="/">
+      <Link className="btn btn-success ml-10" to="/">
         Back To Home
       </Link>
       <h1 className="userTitle mt-8 ml-10">Recommended for you</h1>
-      <div className="grid md:grid-cols-3 justify-items-center mt-8 ">
+      <div className="grid md:grid-cols-3 justify-items-center mt-8 gap-4">
         {displayData.map((accounted) => (
           <div key={accounted.id} className="card w-96 bg-base-100 shadow-xl">
             <figure>

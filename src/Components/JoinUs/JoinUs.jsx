@@ -1,6 +1,12 @@
+import backgroundSvg from "./background.svg";
 const JoinUs = () => {
+  const divStyle = {
+    backgroundImage: `url(${backgroundSvg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover", // You can adjust this based on your requirements
+  };
   return (
-    <div>
+    <div style={divStyle} className="">
       <h1 className="sectionTitle text-center">
         want to <span className="styleColor">Join</span> us
       </h1>
@@ -8,8 +14,8 @@ const JoinUs = () => {
         To remain with us, it is essential that you diligently follow the steps
         provided
       </p>
-      <div className="grid md:grid-cols-3 gap-4 mt-24 justify-items-center ">
-        <div className="card w-[450px] h-full  bg-base-100 relative shadow-xl">
+      <div className="grid md:grid-cols-3 px-16 gap-[45px] mt-24 justify-items-center ">
+        <div className="card w-[420px] h-full  bg-base-100 relative shadow-xl">
           <div className="card-body">
             <h1 className="text-2xl absolute -left-2 -top-2 bg-gradient-to-r from-primary to-secondary font-bold w-[40px] h-[40px] border-2 text-white rounded-lg flex justify-center items-center">
               1<sup>st</sup>
@@ -35,7 +41,7 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[450px] h-full bg-base-100 relative shadow-xl">
+        <div className="card w-[420px] h-full bg-base-100 relative shadow-xl">
           <div className="card-body">
             <h1 className="text-2xl absolute -left-2 -top-2 bg-gradient-to-r from-primary to-secondary font-bold w-[40px] h-[40px] border-2 text-white rounded-lg flex justify-center items-center">
               2<sup>nd</sup>
@@ -61,7 +67,7 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[450px] h-full bg-base-100 relative shadow-xl">
+        <div className="card w-[420px] h-full bg-base-100 relative shadow-xl">
           <div className="card-body">
             <h1 className="text-2xl absolute -left-2 -top-2 bg-gradient-to-r from-primary to-secondary font-bold w-[40px] h-[40px] border-2 text-white rounded-lg flex justify-center items-center">
               3<sup>rd</sup>
@@ -87,7 +93,7 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[450px] h-full bg-base-100 relative shadow-xl">
+        <div className="card w-[420px] h-full bg-base-100 relative shadow-xl">
           <div className="card-body">
             <h1 className="text-2xl absolute -left-2 -top-2 bg-gradient-to-r from-primary to-secondary font-bold w-[40px] h-[40px] border-2 text-white rounded-lg flex justify-center items-center">
               4<sup>th</sup>
@@ -113,7 +119,7 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[450px] h-full bg-base-100 relative shadow-xl">
+        <div className="card w-[420px] h-full bg-base-100 relative shadow-xl">
           <div className="card-body">
             <h1 className="text-2xl absolute -left-2 -top-2 bg-gradient-to-r from-primary to-secondary font-bold w-[40px] h-[40px] border-2 text-white rounded-lg flex justify-center items-center">
               5<sup>th</sup>
@@ -139,7 +145,7 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <div className="card w-[450px] h-full bg-base-100 relative shadow-xl">
+        <div className="card w-[420px] h-full bg-base-100 relative shadow-xl">
           <div className="card-body">
             <h1 className="text-2xl absolute -left-2 -top-2 bg-gradient-to-r from-primary to-secondary font-bold w-[40px] h-[40px] border-2 text-white rounded-lg flex justify-center items-center">
               6<sup>th</sup>
@@ -166,7 +172,7 @@ const JoinUs = () => {
           </div>
         </div>
       </div>
-      <p className=" my-8 text-xl">
+      <p className=" my-8 text-xl px-16 py-8">
         * For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200
         <span className="text-lg font-bold ml-2">every day</span> until you file
         the form . There is no maximum penalty amount. So, if you don't file the

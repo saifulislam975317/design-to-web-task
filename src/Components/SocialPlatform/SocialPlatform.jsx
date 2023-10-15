@@ -73,11 +73,15 @@ const SocialPlatform = () => {
             </h4>
           </div>
           <div>
-            <img className="w-[280px] h-[300px]" src={boy} alt="" />
+            <img className="w-[280px] h-[300px] rounded-3xl" src={boy} alt="" />
           </div>
         </div>
         <div className="">
-          <img className="w-[280px] h-[300px] bg-[#DDF3FF]" src={girl} alt="" />
+          <img
+            className="w-[280px] h-[300px] bg-[#DDF3FF] rounded-3xl mt-5"
+            src={girl}
+            alt=""
+          />
         </div>
       </div>
     </div>
