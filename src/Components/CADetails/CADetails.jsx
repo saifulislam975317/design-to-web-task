@@ -109,7 +109,7 @@ const CADetails = () => {
           </div>
         </div>
       </div>
-      <Link className="btn btn-success ml-10" to="/">
+      <Link className="btn  btn-success ml-10" to="/">
         Back To Home
       </Link>
       <h1 className="userTitle mt-8 ml-10 lg:ml-[127px]">
